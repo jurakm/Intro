@@ -3,6 +3,6 @@
 
 #include <cmath>
 
-double povrsina(double radijus);
+double zadatak(double radijus);
 
 #endif
