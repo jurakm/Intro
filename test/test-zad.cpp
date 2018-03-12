@@ -6,9 +6,9 @@
 using namespace std;
 
 TEST(INTRO, Zadatak) {
-    auto P = zadatak(1.0);
+    double P = zadatak(1.0);
 	
-    ASSERT_DOUBLE_EQ (P, M_PI);
+    ASSERT_DOUBLE_EQ (P, 2*M_PI);
 }
 
 int main(int argc, char **argv) {
