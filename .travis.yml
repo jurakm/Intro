@@ -8,15 +8,16 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - g++-6 
+      - g++-5.4
 
 script:
   - mkdir -p build
   - cd build
-  - CXX=/usr/bin/g++-6 cmake ..
+  - CXX=/usr/bin/g++-5.4 cmake ..
   - make
-  - ./test/test_zad
+  - make test
 
 
 notifications:
-email: false
+email: 
+  - jurak@math.hr
